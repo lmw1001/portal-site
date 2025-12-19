@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>入口</title>
 
-  <!-- ✅ 分頁小圖示（favicon） -->
+  <!-- favicon -->
   <link rel="icon" href="assets/favicon.png" />
 
   <style>
@@ -37,13 +37,13 @@
     .header{
       display:flex;
       align-items:center;
-      gap:14px;
-      margin-bottom:18px;
+      gap:16px;
+      margin-bottom:20px;
     }
     .logo{
-      width:54px;
-      height:54px;
-      border-radius: 12px;
+      width:72px;
+      height:72px;
+      border-radius: 14px;
       background:#fff;
       box-shadow: var(--shadow);
       display:flex;
@@ -59,7 +59,7 @@
     }
     .titlebox h1{
       margin:0;
-      font-size: 30px;
+      font-size: 32px;
       letter-spacing: .5px;
     }
     .titlebox p{
@@ -72,14 +72,13 @@
       background: var(--card);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 22px;
+      padding: 24px;
     }
 
     .grid{
       display:grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 14px;
+      gap: 16px;
     }
     @media (max-width: 720px){
       .grid{ grid-template-columns: 1fr; }
@@ -92,101 +91,87 @@
       text-decoration:none;
       background: var(--primary);
       color:#fff;
-      padding: 16px 14px;
+      padding: 18px 14px;
       border-radius: 12px;
       font-weight: 700;
       font-size: 16px;
       transition: .15s ease;
       box-shadow: 0 8px 18px rgba(11,102,195,.18);
-      min-height: 54px;
+      min-height: 56px;
       text-align:center;
     }
     .btn:hover{ background: var(--primary-hover); transform: translateY(-1px); }
-    .btn:active{ transform: translateY(0px); }
-
     .btn.secondary{
       background:#111827;
       box-shadow: 0 8px 18px rgba(17,24,39,.14);
     }
     .btn.secondary:hover{ background:#0b1220; }
-
     .btn.disabled{
       background:#cbd5e1;
       color:#334155;
       box-shadow:none;
       pointer-events:none;
     }
-
-    .note{
-      margin-top: 14px;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.5;
-    }
   </style>
 </head>
 
 <body>
   <div class="wrap">
-    <!-- ✅ 企業圖示 + 更名為入口 -->
+    <!-- Header -->
     <div class="header">
-      <div class="logo" title="企業圖示">
-        <!-- 把 assets/logo.png 換成你的實際檔名 -->
-        <img src="assets/logo.png" alt="Company Logo">
+      <div class="logo">
+        <img src="assets/logo-cincon.png" alt="CINCON Logo">
       </div>
       <div class="titlebox">
         <h1>入口</h1>
-        <p>專題系統入口網站（GitHub Pages）</p>
+        <p>CINCON 專題系統入口網站</p>
       </div>
     </div>
 
+    <!-- Main Panel -->
     <div class="panel">
       <div class="grid">
-        <!-- 你原本的項目可以保留/改名，這裡先放你新增的 3~10 -->
 
-        <a class="btn" target="_blank" rel="noopener"
+        <a class="btn" target="_blank"
            href="https://forms.office.com/Pages/ResponsePage.aspx?id=6c5jZi6NsEOprkGEfufi8PiNhb67av9Jpx3ChOOmMNRUOTNJQk9GM1dYN1Y2Nks5M0ZXOThMUElXMS4u">
           輔導員回饋
         </a>
 
-        <a class="btn" target="_blank" rel="noopener"
+        <a class="btn" target="_blank"
            href="https://forms.office.com/Pages/ResponsePage.aspx?id=6c5jZi6NsEOprkGEfufi8PiNhb67av9Jpx3ChOOmMNRUMzZBMTZNMkNJTk1CMzNRTUVRRlI4OFZMRi4u">
           面試滿意度調查
         </a>
 
-        <a class="btn" target="_blank" rel="noopener"
+        <a class="btn" target="_blank"
            href="https://forms.office.com/Pages/ResponsePage.aspx?id=6c5jZi6NsEOprkGEfufi8PiNhb67av9Jpx3ChOOmMNRUMjZSTExFTjJLRTUxSEdQRjcyVEw0MklRNy4u">
           （主管）面試狀況記錄表
         </a>
 
-        <a class="btn" target="_blank" rel="noopener"
+        <a class="btn" target="_blank"
            href="https://forms.office.com/Pages/ResponsePage.aspx?id=6c5jZi6NsEOprkGEfufi8PiNhb67av9Jpx3ChOOmMNRUMUdTTzhNWUtIMU8zMVBFREpIRUdONVJWNi4u">
           報到通知
         </a>
 
-        <a class="btn" target="_blank" rel="noopener"
+        <a class="btn" target="_blank"
            href="https://forms.office.com/Pages/ResponsePage.aspx?id=6c5jZi6NsEOprkGEfufi8PiNhb67av9Jpx3ChOOmMNRUNlM2NUczRloyRUc2SE03UVhVNTVUODJHNi4u">
           員工通勤調查
         </a>
 
-        <a class="btn secondary" target="_blank" rel="noopener"
-           href="https://apps.powerapps.com/play/e/default-6663cee9-8d2e-43b0-a9ae-41847ee7e2f0/a/20f5e725-e661-44ba-b14d-95d3fee7fc00?tenantId=6663cee9-8d2e-43b0-a9ae-41847ee7e2f0&hint=8ce20b05-f815-48fc-af44-bd42a2e9deb9&sourcetime=1765862227450&source=portal">
+        <a class="btn secondary" target="_blank"
+           href="https://apps.powerapps.com/play/e/default-6663cee9-8d2e-43b0-a9ae-41847ee7e2f0/a/20f5e725-e661-44ba-b14d-95d3fee7fc00">
           查詢服務（Power Apps）
         </a>
 
-        <!-- 你第九點目前貼的是同一個 Power Apps 連結：我先照貼 -->
-        <a class="btn secondary" target="_blank" rel="noopener"
-           href="https://apps.powerapps.com/play/e/default-6663cee9-8d2e-43b0-a9ae-41847ee7e2f0/a/20f5e725-e661-44ba-b14d-95d3fee7fc00?tenantId=6663cee9-8d2e-43b0-a9ae-41847ee7e2f0&hint=8ce20b05-f815-48fc-af44-bd42a2e9deb9&sourcetime=1765862227450&source=portal">
-          輔導員獎金資格（Power Apps）
+        <a class="btn secondary" target="_blank"
+           href="https://apps.powerapps.com/play/e/default-6663cee9-8d2e-43b0-a9ae-41847ee7e2f0/a/20f5e725-e661-44ba-b14d-95d3fee7fc00">
+          輔導員獎金資格
         </a>
 
-        <!-- 第十點：尚未提供 URL -> 先 disabled -->
-        <a class="btn disabled" href="javascript:void(0)">
-          輔導員提案（待補連結）
+        <a class="btn disabled">
+          輔導員提案（建置中）
         </a>
 
       </div>
-
     </div>
   </div>
 </body>
